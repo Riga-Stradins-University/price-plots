@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="plot-utils/plot-utils.js"></script>
+  <script src="data/data.js"></script>
+  <link rel="stylesheet" href="plot-utils/plot-style.css">
+</head>
+
+<body>
+  <div id="panel-container" style="width:600px; height:300px;"></div>
+
+  <script>
+    const LANG = "en";
+
+    document.addEventListener("DOMContentLoaded", () => {
+            makeSimpleBarplot(
+                    "panel-container", 
+                    mealPrices, 
+                    {
+                     orientation: 'h',
+                     referenceLines: [5,10,15,20,25,30],
+                     highlightLabel: 'Daily',
+                     xRange: [0,31],
+                     xLabel: "Main course price (EUR)",
+                     hoverStr: "EUR",
+                    });
+                  });
+  </script>
+</body> 
+</html>
