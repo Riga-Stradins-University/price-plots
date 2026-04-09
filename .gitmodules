@@ -1,0 +1,3 @@
+[submodule "plot-utils"]
+	path = plot-utils
+	url = https://github.com/Riga-Stradins-University/plot-utils.git
